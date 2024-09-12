@@ -1,3 +1,5 @@
+import csv
+
 import requests
 import json
 from command_goals import command_goals
@@ -52,6 +54,9 @@ while bool:
                      mission_fit_scores: {goals.mission_fit_scores}")
     if chous == 3:
         print("קובץ נטען")
+        # with open('data_semicolon.csv', mode='w', newline='') as file:
+        #     csv_writer = csv.writer(file, delimiter='|')
+        #     csv_writer.writerows(goals_list)
 
 
     if chous == 4:
