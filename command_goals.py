@@ -35,13 +35,13 @@ def command_goals(aircraft_list, pilots_list, city_target_list):
 
 # מייצרת ציוני התאמה למשימה
 def mission_fit_scores(distanse, aircraft_type, pilot_skill, weather_conditions, execution_time, priority):
-    mission_fit_scores = ((distanse * 0.15)/
-           + (aircraft_type * 0.20)/
-           + (pilot_skill * 0.20)/
-           + (weather_conditions * 0.20)/
-           + (execution_time * 0.10)/
+    mission_fit_scores = ((distanse * 0.15)
+           + (aircraft_type * 0.20)
+           + (pilot_skill * 0.20)
+           + (weather_conditions * 0.20)
+           + (execution_time * 0.10)
            + (priority * 0.15))
-    return mission_fit_scores * 1000
+    return mission_fit_scores / 2
 
 # פןנקציןת עזר ליצירת ציון ספציפי מאחד עד עשר עבור כל פרמטר
 
