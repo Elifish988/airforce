@@ -1,5 +1,10 @@
 class Command_goals:
-    def __init__(self, target_city: str, priority: int, assigned_pilot: str, assigned_aircraft: str, distance: float, weather_conditions: str,weather: float, pilot_skill: float, aircraft_speed: float, fuel_capacity: float, mission_fit_scores: float):
+    def __init__(self, target_city: str, priority: int\
+                 , assigned_pilot: str, assigned_aircraft: str\
+                 , distance: float, weather_conditions: str\
+                 ,weather: float, pilot_skill: float\
+                 , aircraft_speed: float, fuel_capacity: float\
+                 , mission_fit_scores: float):
         self.target_city = target_city
         self.priority = priority
         self.assigned_pilot = assigned_pilot

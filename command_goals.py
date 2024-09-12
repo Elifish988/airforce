@@ -43,7 +43,7 @@ def mission_fit_scores(distanse, aircraft_type, pilot_skill, weather_conditions,
            + (priority * 0.15))
     return mission_fit_scores * 1000
 
-# פןנקציית עזר ליצירת ציון ספציפי מאחד עד עשר עבור כל פרמטר
+# פןנקציןת עזר ליצירת ציון ספציפי מאחד עד עשר עבור כל פרמטר
 
 def score_distance(city_target_list, distanse):
     max_skill_level = max(city_target_list, key=lambda x: x.distanse)
